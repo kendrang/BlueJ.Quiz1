@@ -61,7 +61,6 @@ public class StringUtilities {
         if (letter != charToRemove){
         result += letter;
         }
-        
         }
         return result;
     }
@@ -72,6 +71,13 @@ public class StringUtilities {
      * @return last `word` in sentence
      */
     public String getLastWord(String sentence) {
-        return null;
+        String result = "";
+        result = sentence.substring(sentence.lastIndexOf(" "),sentence.length());
+        
+        result = result.trim();
+        return result;
+        
     }
+    //https://www.quora.com/What-is-the-simplest-way-to-get-the-last-word-of-a-string-in-Java-You-can-assume-no-punctuation-just-alphabetic-characters-and-whitespace
+    // :^)
 }
