@@ -54,9 +54,19 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        return null;
+        char [] c = value.toCharArray (); // changes string to an array
+        String result = "";
+        for (int i=0; i< value.length();i++){
+        char letter = c[i]; //sets array location to a variable to check
+        if (letter != charToRemove){
+        result += letter;
+        }
+        
+        }
+        return result;
     }
-
+    // https://stackoverflow.com/questions/45114606/how-to-erase-certain-characters-in-a-string-using-a-for-loop
+    // that took forever
     /**
      * @param sentence String delimited by spaces representative of a sentence
      * @return last `word` in sentence
