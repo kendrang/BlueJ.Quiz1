@@ -10,9 +10,14 @@ public class LoopFun
        * @return the factorial of the number
        */
       public Integer factorial(Integer number){
-          return null;
+          Integer result = 1 ;
+          for (Integer i=1 ; i <= number ; i++){
+            result = result * i;
+            }
+          
+          return result;
       }
-
+      //done augh 
       /**
        * Given a phrase, get the acronym of that phrase. Acronym is the combination of
        * the first character of each word in upper case.
