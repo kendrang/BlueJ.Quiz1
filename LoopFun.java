@@ -47,6 +47,11 @@ public class LoopFun
        * @return the encrypted string by shifting each character by three character
        */
       public String encrypt(String word) {
-          return null;
+          String result = "";
+          for (char c : word.toCharArray()) {
+              result += Character.toString((char) (((c - 'a' + 3) % 26) + 'a'));
+            }
+       
+          return result;
       }
 }
